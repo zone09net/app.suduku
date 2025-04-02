@@ -11,7 +11,7 @@ export default [
 				'@extlib/matter': './extlib/matter-0.20.0.min.js',
 				'@extlib/poly-decomp': './extlib/poly-decomp-0.2.1.min.js',
 				'@extlib/intersects': './extlib/intersects-2.7.1.min.js',
-				'@extlib/sudukogen': './extlib/sudukugen-1.0.2.min.js'
+				'@extlib/sudukugen': './extlib/sudukugen-1.0.2.min.js'
 			 }
 		},
 	},

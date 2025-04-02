@@ -3,7 +3,6 @@ import * as Foundation from '@zone09.net/foundation';
 import {getSudoku} from '@extlib/sudukugen';
 import {Grid} from './components/Grid.js';
 import {Button} from './components/Button.js';
-import {Square} from './components/Square';
 
 
 
@@ -19,20 +18,6 @@ export class Suduku
 
 	public constructor()
 	{
-		let sheet = new CSSStyleSheet();
-		sheet.replaceSync(`
-			body {
-				overflow: hidden;
-				background-color: #000000;
-				margin: 0px;
-				padding: 0px;
-				image-rendering: pixelated;
-				user-select: none;
-			}
-		`);
-		// @ts-ignore
-		document.adoptedStyleSheets = [sheet]
-
 		this._context = new Paperless.Context({
 			autosize: true, 
 			layer: 0,
