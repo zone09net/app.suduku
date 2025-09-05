@@ -44,6 +44,7 @@ class Square extends Paperless.Component {
                                 self.drawable.generate();
                             }
                             this.context.getLayer(5).freeze();
+                            this.context.refresh();
                         },
                         onRightClick: (self) => {
                             this.context.getLayer(5).unfreeze();
@@ -58,6 +59,7 @@ class Square extends Paperless.Component {
                                 self.drawable.generate();
                             }
                             this.context.getLayer(5).freeze();
+                            this.context.refresh();
                         },
                     }));
                 }
